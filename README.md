@@ -26,10 +26,12 @@ The script takes a list of references from a file and scrapes Pubmed for each re
 * Author et al, Amazing fancy title. YourFavJournal (2020)
 * Foo, B. and Bar, F.. Plants make oxygen, maybe? Journal of House plants. (1990)
 * etc.
+
 It also works with numbered lists like
 1. Author et al, Amazing fancy title. YourFavJournal (2020)
 1. Foo, B. and Bar, F.. Plants make oxygen, maybe? Journal of House plants. (1990)
 1. etc.
+
 Please be aware that in this case the numbers will be part of the search string. Usually, this does not matter, but if you encounter problems try to remove them.
 Empty lines are skipped.
 The output will be written in a file called *references.txt* in the National Library of Medicine format, which can be read by essentially all reference managers.
@@ -70,4 +72,5 @@ After running the python script over the html file, it can be opened in Word aga
 
 ## References
 Idea for the workflow: https://community.endnote.com/t5/EndNote-How-To/Converting-manually-created-in-text-citations-to-EndNote/td-p/135007
+
 Initial script idea for *scrape_refs.py*: https://blog.macuyiko.com/post/2016/converting-plain-text-references-to-bibtex-updated.html
