@@ -21,6 +21,7 @@ Written in Python 3.8.5 using to following modules:
 
 ## The scripts
 **scrape_refs.py**
+
 So far, works only with [Pubmed](https://pubmed.ncbi.nlm.nih.gov/) for biomedical science. I tried google scholar, but could not figure out how to make it work, so I went for my field of expertise.
 The script takes a list of references from a file and scrapes Pubmed for each reference. The references need to be provided in the form of **one reference per line**, e.g.
 * Author et al, Amazing fancy title. YourFavJournal (2020)
@@ -39,6 +40,7 @@ The output will be written in a file called *references.txt* in the National Lib
 This means that this script **can be used by anyone to extract references from a list into your favorite reference manager** in a semi-automatic way.
 
 **endnote_convert.py**
+
 This script simply replaces all occucences of <sup>1, 2, 3</sup> into {#1}{#2}{#3}.
 However, working with docx files in Python is not very intuitive. For this reason, the ability of word to save and open websites or simply HTM(L) files is used.
 Word converts all superscript citiations into this code
