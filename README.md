@@ -6,7 +6,7 @@ I don't care about the details, [jump to the workflow](#How-To)
 ## Idea and concept
 Sometimes you have an old manuscript draft, where the references have been converted into plain text and can't be changed by [Endnote](https://endnote.com/) anymore. There is no inbuild option to reverse this and you are stuck with either updating everything by hand or starting over by inserting all the references anew.
 This workflow will hopefully help you with this and covert your plain text references into a list of endnotes that Endnote can modify.
-The basic concept is that the references will be imported into Endnote as a **new** library, because Endnote numbers all entries in the order that they are created. This means if we have references in the form of <sup>1, 2, 3</sup> we will import them in exaclty this order. Later on, the Microsoft Word file will be modified to exchange all occucences of <sup>1, 2, 3</sup> into {#1}{#2}{#3}, tricking Endnote into thinking these are unformatted citations and that the numbers correspond with the numbers in the library. 
+The basic concept is that the references will be imported into Endnote as a **new** library, because Endnote numbers all entries in the order that they are created. This means if we have references in the form of <sup>1, 2, 3</sup> we will import them in exactly this order. Later on, the Microsoft Word file will be modified to exchange all occucences of <sup>1, 2, 3</sup> into {#1}{#2}{#3}, tricking Endnote into thinking these are unformatted citations and that the numbers correspond with the numbers in the library. 
 
 ## Requirements
 Written in Python 3.8.5 using to following modules:
@@ -36,6 +36,8 @@ It also works with numbered lists like
 Please be aware that in this case the numbers will be part of the search string. Usually, this does not matter, but if you encounter problems try to remove them.
 Empty lines are skipped.
 The output will be written in a file called *references.txt* in the National Library of Medicine format, which can be read by essentially all reference managers.
+
+There is no requirement for the citations to be in a specific style, I tried different styles like EMBO, Nature, Cell, and all of them were successfully used to get results from Pubmed.
 
 This means that this script **can be used by anyone to extract references from a list into your favorite reference manager** in a semi-automatic way.
 
