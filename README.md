@@ -1,4 +1,4 @@
-# endnote_convert
+# Endnote Convert
 Collection of scripts to collect plain text references and convert them back into editable citations by endnote.
 
 I don't care about the details, [jump to the workflow](#How-To)
